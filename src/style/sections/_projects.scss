@@ -1,6 +1,6 @@
-#projects {
+#dev-projects, #ux-projects {
   background-color: $white-color;
-  color: $dark-blue-text;
+  color: $dark-grey;
   margin-top: -10rem;
   padding-top: 15rem;
 
@@ -38,9 +38,21 @@
         font-weight: bold;
         margin-bottom: 1.8rem;
         font-size: $mid-font-size;
+        color: $dark-blue-text;
 
         @include respond(phone) {
           font-size: 2rem;
+        }
+      }
+
+      &-sub-title {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: $semi-mid-font-size;
+        color: $dark-grey;
+
+        @include respond(phone) {
+          font-size: 1.8rem;
         }
       }
 
@@ -75,4 +87,39 @@
       }
     }
   }
+  .center {
+    text-align: center;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .bold {
+    font-weight: 600;
+  }
+
+
+  // .no-shadow {
+  //       border: none;
+  //       box-shadow: 0 1px 1px rgba(255, 255, 255, 0), 0 1px 1px rgba(255, 255, 255, 0);
+  //       transition: all 0.2s ease-out;
+  //       box-shadow: 0 2px 2px rgba(255, 255, 255, 0), 0 0 2px rgba(255, 255, 255, 0);
+  //       transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+  //         0.5s box-shadow,
+  //         0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+
+  //       @include respond(phone) {
+  //         // border: 1px solid #d2d2d2;
+  //         box-shadow: none;
+  //         margin-bottom: 3.2rem;
+  //       }
+  //     }
+
+
+  .no-shadow {
+    border: none;
+    box-shadow: none !important;
+  }
+
 }
