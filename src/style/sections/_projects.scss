@@ -1,6 +1,6 @@
-#projects {
+#dev-projects, #ux-projects {
   background-color: $white-color;
-  color: $dark-blue-text;
+  color: $dark-grey;
   margin-top: -10rem;
   padding-top: 15rem;
 
@@ -38,6 +38,7 @@
         font-weight: bold;
         margin-bottom: 1.8rem;
         font-size: $mid-font-size;
+        color: $dark-blue-text;
 
         @include respond(phone) {
           font-size: 2rem;
